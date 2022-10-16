@@ -1,0 +1,38 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+#header-color {
+  grid-area: header-color;
+}
+
+#yellow-box {
+  grid-area: yellow-box;
+}
+
+#red-box {
+  grid-area: red-box;
+}
+
+#orange-box {
+  grid-area: orange-box;
+}
+
+#aside-color-blue {
+  grid-area: aside-color-blue;
+}
+
+#container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 35% 35% 30%;
+  grid-template-rows: 15% 70% 15%;
+  gap: 5%;
+  grid-template-areas:
+    "header-color header-color header-color"
+    "yellow-box red-box aside-color-blue"
+    "orange-box orange-box aside-color-blue";
+}
